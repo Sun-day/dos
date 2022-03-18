@@ -35,17 +35,48 @@ shutdown  -s -t 1100 -c '小垃圾去死吧'
 注销
 logoff 
 shutdown -l
+
+
+
+
+
+
 ```
 # windows 进阶之批处理
 
+```
+输出空行
+echo.
 
+修改窗口显示名称
+title 
 
+屏蔽过程
+@echo off
 
+判断
+if "%num%"=="1"
 
+暂停
+pause
 
+定义可以执行块配合goto使用
+:d
+echo 'aaa'
+使用goto执行代码块内容
+goto d
 
+用户输入/p使变量值定义为用户输入
+set /p a=请输入
 
+引用变量
+echo %a%
 
+不显示执行结果 
+ping 127.0.0.1  >nul 2>nul
+fsutil file createnew D:\system.ini 409600000 >nul 2>nul
+
+```
  
 
 
