@@ -10,6 +10,8 @@ attrib +h +a +s D:/file
 echo aaa>aaa.txt
 查看文件内容
 type aaa.txt
+分页显示内容 
+type aaa.txt | more
 
 输出多行到指定文件
 copy con aaa.txt
