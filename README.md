@@ -1,7 +1,7 @@
 # dos
 
 ## 安全基础入门之windows dos基础入门
-···
+```
 创建文件 
 md D:/file
 设置文件夹级别  h 隐藏  a 所有用户  s 系统文件
@@ -33,7 +33,7 @@ shutdown  -s -t 1100 -c '小垃圾去死吧'
 注销
 logoff 
 shutdown -l
-···
+```
 # windows 进阶之批处理
 
 
