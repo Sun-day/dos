@@ -36,12 +36,8 @@ shutdown  -s -t 1100 -c '小垃圾去死吧'
 logoff 
 shutdown -l
 
-
-
-
-
-
 ```
+
 # windows 进阶之批处理
 
 ```
