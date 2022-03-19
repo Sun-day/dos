@@ -78,6 +78,58 @@ fsutil file createnew D:\system.ini 409600000 >nul 2>nul
 
 ```
  
+# windows进阶之用户\组
+
+## 用户
+```
+
+系统用户
+本地用户
+  administrator 
+  guest
+网络用户
+
+查看用户列表
+net user
+
+查看用户详细信息
+net user Administrator
+
+修改Administrator密码
+net user Administrator password
+
+新建账户 /add
+net user username password /add 
+
+删除用户 /del
+net user username /del
+
+```
+
+## 组
+
+```
+列出本地组
+net localgroup
+
+创建组 /add
+net localgroup  groupname /add
+
+删除组 /del
+net localgroup  groupname /del
+
+查看组用户
+net localgroup Administrators
+
+添加用户到组 /add
+net localgroup Administrators username /add
+
+删除组内用户 /del(administrator 最高管理员权限)
+net localgroup Administrators username /del
+
+激活/禁用户 /active:yes/no
+net localgroup Administrators username /active:yes
+net localgroup Administrators username /active:no
 
 
-
+```
