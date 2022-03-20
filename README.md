@@ -129,3 +129,39 @@ net localgroup Administrators username /active:no
 
 
 ```
+# windows远程管理
+
+```
+开启远程桌面
+我的电脑邮件属性高级系统设置远程允许远程连接到此计算机
+非管理员账号要加到组内 
+net localgroup Remote Desktop Users  user /add
+远程连接
+mstsc
+
+远程管理工具
+telnet 
+
+开启telnet服务
+services.msc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
