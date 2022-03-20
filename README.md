@@ -36,6 +36,14 @@ shutdown  -s -t 1100 -c '小垃圾去死吧'
 logoff 
 shutdown -l
 
+查看本机开放的端口
+netstat -an
+telnet: 23
+RDP: 3389
+TCP共享服务：445
+
+
+
 ```
 
 # windows 进阶之批处理
@@ -143,12 +151,11 @@ mstsc
 telnet 
 
 开启telnet服务
-services.msc
+services.msc打开telnet服务
+将用户添加到telnetClients组内
 
-
-
-
-
+telnet远程连接(不加密)
+telnet 127.0.0.1 
 
 
 
